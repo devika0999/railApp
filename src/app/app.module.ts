@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ViewAlltrainComponent } from './view-alltrain/view-alltrain.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes:Routes=[
   {
@@ -21,6 +22,7 @@ const appRoutes:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
     FormsModule
   ],
   providers: [],
